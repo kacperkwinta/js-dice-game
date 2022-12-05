@@ -26,6 +26,7 @@ main {
 }
 
 .player {
+  position: relative;
   width: 40rem;
   height: 50rem;
   text-align: center;
@@ -40,6 +41,22 @@ main {
     hsl(243, 100%, 92%) 0%,
     hsl(240, 100%, 76%) 100%
   );
+}
+
+.player::after {
+  content: "🔴";
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
+}
+
+.player--active::after {
+  content: "🟢";
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 2rem;
 }
 
 #player--1 {
