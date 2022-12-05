@@ -1,0 +1,58 @@
+/* 1060px */
+@media (max-width: 66.25em) {
+  html {
+    font-size: 40%;
+  }
+
+  main {
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+
+  .player {
+    width: 25rem;
+    height: 19rem;
+    padding: 1.6rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  /* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+  #player--0 {
+    order: 1;
+  }
+
+  #player--1 {
+    order: 2;
+  }
+
+  .controls {
+    order: 3;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+
+  .score {
+    margin-top: 1.2rem;
+    font-size: 3.2rem;
+  }
+
+  .current-label {
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .current-score {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+  }
+}
+
+/* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

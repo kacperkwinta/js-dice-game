@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="dice-1.webp" />
+    <title>Pig Game</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+  </head>
+  <body>
+
+    <main>
+
+      <div class="player" id="player--0">
+        <h2 class="name">player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <p class="current-label">Current</p>
+        <p class="current-score" id="current--0">0</p>
+      </div>
+
+      <div class="controls">
+        <button class="btn btn-new">🔁 new game</button>
+        <img src="dice-1.webp" class="dice" alt="" />
+        <button class="btn btn-roll">🎲 roll dice</button>
+        <button class="btn btn-hold">📥 hold score</button>
+      </div>
+
+      <div class="player" id="player--1">
+        <h2 class="name">player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <p class="current-label">Current</p>
+        <p class="current-score" id="current--1">0</p>
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
