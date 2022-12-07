@@ -1,5 +1,3 @@
-# js-pig-game
+# easy, funny dice game for 1-2 players written in JS 💛
 
-some DOM exercises... try it out
-
-https://kacperkwinta.github.io/js-pig-game/
+[try it out!](https://kacperkwinta.github.io/js-dice-game/)
