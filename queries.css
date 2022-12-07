@@ -1,7 +1,7 @@
 /* 1060px */
 @media (max-width: 66.25em) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 
   main {
@@ -10,7 +10,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    margin: 2rem auto;
+    margin: 0 auto;
     flex-direction: column;
   }
 
