@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Alexandria", sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-size: 62.5%;
   letter-spacing: 2px;
   color: #f8f9fa;
@@ -44,7 +44,7 @@ main {
 }
 
 .player::after {
-  content: "🔴";
+  content: '🔴';
   position: absolute;
   top: 5%;
   right: 5%;
@@ -52,14 +52,18 @@ main {
 }
 
 .player--active::after {
-  content: "🟢";
+  content: '🟢';
   position: absolute;
   top: 5%;
   right: 5%;
   font-size: 2rem;
 }
 
-#player--1 {
+.player--winner {
+  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+}
+
+.player--1 {
   background-image: linear-gradient(
     -225deg,
     hsl(243, 100%, 82%) 0%,
@@ -133,6 +137,10 @@ main {
   margin: 0 auto;
   width: 15.8rem;
   height: 15.8rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
