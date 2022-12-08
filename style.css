@@ -16,7 +16,7 @@ body {
   background-color: #f1f3f5;
 }
 
-/******* MODAL ********/
+/******* <MODAL> ********/
 .modal-rules {
   position: absolute;
   top: 50%;
@@ -70,6 +70,7 @@ body {
 .modal-rules p {
   font-size: 1.6rem;
 }
+/******* </MODAL> ********/
 
 main {
   margin-top: 25rem;
@@ -202,10 +203,21 @@ main {
   display: none;
 }
 
-/* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+footer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #adb5bd;
+}
 
-- SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+footer a {
+  color: #adb5bd;
+}
 
+/******* ANIMATIONS *********/
 .player--0 {
   transition: all ease;
   animation: showIn 0.6s;
@@ -240,3 +252,7 @@ main {
     opacity: 1;
   }
 }
+
+/* - FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
