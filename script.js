@@ -10,11 +10,17 @@ const score1El = document.querySelector('.score--1');
 const current0El = document.querySelector('.current--0');
 const current1El = document.querySelector('.current--1');
 
-// buttons and dice
+// buttons, dice
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+
+//  modal
+const btnRules = document.querySelector('.btn--rules');
+const closeModal = document.querySelector('.close-modal');
+const modalEl = document.querySelector('.modal-rules');
+const overlayEl = document.querySelector('.overlay');
 
 // starting conditions
 diceEl.classList.add('hidden');
@@ -99,4 +105,22 @@ btnNew.addEventListener('click', function () {
   player0El.classList.add('player--active');
   player1El.classList.remove('player--winner');
   player1El.classList.remove('player--active');
+});
+
+/////////////////////////
+// modal
+/////////////////////////
+btnRules.addEventListener('click', function () {
+  modalEl.classList.toggle('hidden');
+  overlayEl.classList.toggle('hidden');
+});
+
+closeModal.addEventListener('click', function () {
+  modalEl.classList.toggle('hidden');
+  overlayEl.classList.toggle('hidden');
+});
+
+overlayEl.addEventListener('click', function () {
+  modalEl.classList.toggle('hidden');
+  overlayEl.classList.toggle('hidden');
 });
