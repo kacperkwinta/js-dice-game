@@ -53,6 +53,12 @@ btnRoll.addEventListener('click', function () {
 
     // check for rolled 1
     if (dice === 1) {
+      // decrease points
+      if (scores[activePlayer] > 0) {
+        scores[activePlayer] -= 5;
+        document.querySelector(`.score--${activePlayer}`).textContent =
+          scores[activePlayer];
+      }
       // switch player
       switchPlayer();
     } else {
