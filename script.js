@@ -70,12 +70,14 @@ btnHold.addEventListener('click', function () {
     if (scores[activePlayer] >= 100) {
       // finish game
       playing = false;
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.toggle('player--active');
+
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
+
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
     }
 
     // switch player
@@ -91,6 +93,8 @@ btnNew.addEventListener('click', function () {
   activePlayer = 0;
   document.querySelector('.score--0').textContent = 0;
   document.querySelector('.score--1').textContent = 0;
+  document.querySelector('.current--0').textContent = 0;
+  document.querySelector('.current--1').textContent = 0;
   player0El.classList.remove('player--winner');
   player0El.classList.add('player--active');
   player1El.classList.remove('player--winner');

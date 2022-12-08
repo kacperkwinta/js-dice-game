@@ -59,16 +59,16 @@ main {
   font-size: 2rem;
 }
 
-.player--winner {
-  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
-}
-
 .player--1 {
   background-image: linear-gradient(
     -225deg,
     hsl(243, 100%, 82%) 0%,
     hsl(240, 100%, 66%) 100%
   );
+}
+
+.player--winner {
+  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
 }
 
 .name {
